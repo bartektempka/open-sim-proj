@@ -1,0 +1,17 @@
+apiVersion: simon/v1alpha1
+kind: Config
+metadata:
+  name: simon-config
+spec:
+  cluster:
+    customConfig: simon-cluster
+  appList:
+    - name: hotelReservation
+      path: hotelReservation/
+    - name: hotelReservation-memoryIntensive
+      path: hotelReservation-memoryIntensive/
+    # - name: yoda
+    #   path: open-simulator/example/application/charts/yoda
+    #   chart: true
+
+  newNode: simon-newNode/
