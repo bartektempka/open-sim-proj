@@ -10,8 +10,6 @@ git submodule update --init
 NOTE:
 Here I also included a fork of hotelReservation form DeathStarBench repository with some modifications to make it work with the simulator. (added port protocols and added memory requests to pods)
 
-Add open-simulator as submodule:
-
 Build the project
 ```bash
 cd open-simulator
