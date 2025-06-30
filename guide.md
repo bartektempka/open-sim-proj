@@ -1,8 +1,22 @@
 ## Installing open-simulator
-Clone the repository and build the project:
+
+Clone this repository, e.g.
+```bash
+gh repo clone bartektempka/open-sim-proj
+cd open-sim-proj
+```
+
+NOTE:
+Here I also included a fork of hotelReservation form DeathStarBench repository with some modifications to make it work with the simulator. (added port protocols and added memory requests to pods)
+
+Add open-simulator as submodule:
 
 ```bash
-git clone git@github.com:alibaba/open-simulator.git
+git submodule add https://github.com/alibaba/open-simulator.git
+```
+
+Build the project
+```bash
 cd open-simulator
 make
 ```
@@ -13,18 +27,9 @@ test the installation by running the simulator:
 make test
 ```
 
-Now clone my custom cluster configuration.
+After testing installation return to open-sim-proj folder
 ```bash
-git clone
-TODO:REPO_URL/simon-cluster.git
-```
-Here I also included a fork of hotelReservation form DeathStarBench repository with some modifications to make it work with the simulator. (added port protocols and added memory requests to pods)
-
-## Cappacity Planning with open-simulator
-
-```bash
-cd hotelReservation/scripts
-./build-docker-images.sh
+cd ..
 ```
 
 ### First look
