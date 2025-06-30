@@ -211,5 +211,5 @@ This will create a cluster that is identical to the one in the kubeconfig file.
 
 ### Simulating Deploying Applications:
 We can also simulate deploying applications to the running cluster.
-But I didn't manage to make it work tried it wit aws and kind clusters.
+But I didn't manage to make it work tried it with aws and kind clusters.
 
