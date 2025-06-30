@@ -2,7 +2,7 @@
 
 Clone this repository, e.g.
 ```bash
-gh repo clone bartektempka/open-sim-proj
+git clone https://github.com/bartektempka/open-sim-proj.git
 cd open-sim-proj
 git submodule update --init
 ```
