@@ -1,0 +1,3 @@
+[submodule "open-simulator"]
+	path = open-simulator
+	url = https://github.com/alibaba/open-simulator
