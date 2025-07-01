@@ -1,3 +1,6 @@
+## Use case
+Open-simulator is used to simulate kubernetes deployments, wich in turn lets us know if we can deploy our aplication on a given cluster, and which pods should be assigned to which node 
+
 ## Installing open-simulator
 
 Clone this repository, e.g.
