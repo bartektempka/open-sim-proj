@@ -25,6 +25,13 @@ spec:
       labels:
         io.kompose.service: reservation
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: node-role.kubernetes.io/master
+                operator: DoesNotExist
       containers:
         - command:
             - ./reservation

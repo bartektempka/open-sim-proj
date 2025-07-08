@@ -25,6 +25,13 @@ spec:
       labels:
         io.kompose.service: jaeger
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: node-role.kubernetes.io/master
+                operator: DoesNotExist
       containers:
         - image: jaegertracing/all-in-one:latest
           name: hotel-reserv-jaeger

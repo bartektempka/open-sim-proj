@@ -10,8 +10,5 @@ spec:
       path: hotelReservation/
     - name: hotelReservation-memoryIntensive
       path: hotelReservation-memoryIntensive/
-    # - name: yoda
-    #   path: open-simulator/example/application/charts/yoda
-    #   chart: true
 
   newNode: simon-newNode/

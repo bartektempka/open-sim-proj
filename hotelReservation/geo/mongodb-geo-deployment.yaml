@@ -26,6 +26,13 @@ spec:
       labels:
         io.kompose.service: mongodb-geo
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: node-role.kubernetes.io/master
+                operator: DoesNotExist
       containers:
         - image: mongo:4.4.6
           name: hotel-reserv-geo-mongo
